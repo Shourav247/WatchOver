@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="32dp">
+
+    <TextView
+        android:id="@+id/memory_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5D4037"
+        android:padding="16dp"
+        android:textSize="17sp"
+        android:textColor="#000000"
+        android:text="hello_world"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/memory_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/left_column"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+            </com.github.mikephil.charting.charts.PieChart>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right_column"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/solvent_image"
+                android:layout_marginTop="16dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:text="used"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/used_space"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:text="free_space"
+                        android:textColor="#000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:padding="8dp"
+                        android:text="free"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/free_space"
+                        android:layout_width="0dp"
+                        android:padding="8dp"
+                        android:text="free_space"
+                        android:textStyle="bold"
+                        android:textColor="#000" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:padding="8dp"
+                        android:text="total"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_space"
+                        android:layout_width="20dp"
+                        android:padding="8dp"
+                        android:textStyle="bold"
+                        android:text="free_space"
+                        android:textColor="#000" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

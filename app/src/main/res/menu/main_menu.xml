@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Home"
+        android:id="@+id/itemHome"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item
+        android:id="@+id/newFile"
+        android:orderInCategory="10"
+        android:title="New File"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/switchView"
+        android:orderInCategory="10"
+        android:title="Grid View">
+        <!--<menu>
+            <item android:title="List View"
+                android:id="@+id/itemListView"
+                />
+            <item android:title="Grid View"
+                android:id="@+id/itemGridView"
+                />
+        </menu>-->
+    </item>
+
+</menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_memory"
+            android:icon="@drawable/ic_action_sd"
+            android:title="Memory"
+            />
+        <item
+            android:id="@+id/nav_ram"
+            android:icon="@drawable/ic_action_ram"
+            android:title="Ram" />
+        <item
+            android:id="@+id/nav_battery"
+            android:icon="@drawable/ic_action_battery"
+            android:title="Battery Status" />
+        <item
+            android:id="@+id/nav_junk"
+            android:icon="@drawable/ic_action_junk"
+            android:title="Junk Clean" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
